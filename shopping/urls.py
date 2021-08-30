@@ -23,5 +23,3 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('shopping_app.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
-
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
