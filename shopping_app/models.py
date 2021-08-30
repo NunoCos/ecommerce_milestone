@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils import timezone
-from multiselectfield import MultiSelectField
 from django.shortcuts import reverse
 from django.conf import settings
 from django_countries.fields import CountryField
