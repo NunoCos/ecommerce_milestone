@@ -19,7 +19,7 @@ section class="categories">
             <div class="row">
                 <div class="col-lg-6 p-0">
                     <div>
-                    <div class="categories__text">
+                    <div>
                         <h1>Women’s fashion</h1>
                         <p>In the ecommerce Store the new style is one click away</p>
                         <a href="#">Shop now</a>
@@ -72,7 +72,7 @@ section class="categories">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="services__item">
+                <div>
                     <i class="fa fa-car"></i>
                     <h6>Free Shipping</h6>
                     <p>For all orders over €99</p>
@@ -105,12 +105,7 @@ section class="categories">
 <!-- Services Section End -->
 
 
-{% endblock content %}
+{% endblock%}
 {% block custom_js %}
-<script>
-    document.onload = setTimeout(function () {
-        $("#alert_msg").css('display','none');
-    }, 2000);
 
-</script>
 {% endblock %}

@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-tl5aon-yq_-scwfhss($8-g87v#+f9)^8jer#h^o5bm$+mxf($
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'django_countries',
     'shopping_app',
+    'django_countries',
 ]
 
 MIDDLEWARE = [
