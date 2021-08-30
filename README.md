@@ -1,104 +1,264 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Milestone Fashion
 
-Welcome USER_NAME,
+### [Live Site]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+Milestone Fashion is a fashion website where user can buy the latest clothes. The clothes advertised are not from know designers neither high end fashion clothes,
+just a simple place where everyone can browse and just buy their favourite piece of clothe with no regret.
 
-## Gitpod Reminders
+## Table of Contents:
+-  [UX](#ux)
+    -  [User Stories](#user-stories)
+    -  [Strategy](#1-strategy)
+    -  [Scope](#2-scope)
+    -  [Structure](#3-structure)
+    -  [Skeleton](#4-skeleton)
+    -  [Surface](#5-surface)
+-  [Features](#features)
+    -  [Existing Features](#existing-features)
+    -  [Features to consider implementing in the future](#features-to-consider-implementing-in-the-future)
+-  [Technologies Used](#technologies-used)
+    -  [Languages](#1-languages)
+    -  [Integrations](#2-integrations)
+    -  [Workspace, Version Control, and Repository Storage](#3-workspace-version-control-and-repository-storage)
+-  [Resources](#resources)
+-  [Testing](#testing)
+-  [Deployment](#deployment)
+-  [Credits](#credits)
+-  [Acknowledgments](#acknowledgments)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX
+### User Stories
 
-`python3 -m http.server`
+- As a non-member, I want to visit the homepage to have an overview of what the site is about and the pricing page to check the prices.
 
-A blue button should appear to click: _Make Public_,
+- As a user, I want to easily understand the main purpose of the website so that I immediately know what the site is intended for upon entering.
 
-Another blue button should appear to click: _Open Browser_.
+- As a user, I want to be able to view the site on any device I may have, (mobile/tablet/desktop).
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- As a user, I want to easily sign up to the website.
 
-A blue button should appear to click: _Make Public_,
+- As a user, I want to easily log in and log out on my account.
 
-Another blue button should appear to click: _Open Browser_.
+- As a user, I want to contact the website management to clarify doubts.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- As an admin/superuser, I want to recieve a confirmation email when a contact form is submitted.
 
-To log into the Heroku toolbelt CLI:
+- As an admin/superuser, I want to have the ability to update site content.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### 1. Strategy
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The main strategy of this project is to promote the sale of clothing there will be a several category selection and the user can browse straight away to the category that he/she wished to make a purchase
 
-------
+####  Site Goals
 
-## Release History
+- Provide an easy navigation website.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Give a way to users easily chose clothing and checkout.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Offer easy interaction on the page.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### 2. Scope
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Fits in with my current skill-set of HTML, CSS, JavaScript, Python and Django.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- Website information clearly relayed upon entering the home page.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Easy way to Sign Up, Log in and Log out.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Allow admin create, read, update and delete products.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### 3. Structure
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The idea of the website is simple. Allow the user to buy a product and safely checkout.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The website has the same design to keep consistency and provide easy and friendly navigation to the user.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+A clear communication is provided to the user after some interactions, using the messages function in Django.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### 4. Skeleton
+-  Wireframes
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    Homepage
+    ![homepage](docs/wireframes/Home.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+    Product Category page
+    ![men/women](docs/wireframes/Men_women.png)
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    Login
+    ![login page](docs/wireframes/login.png)
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- Navigation bar - Menu with links pointing to each page
+    - **Home** 
+    - **Cart** -  Provide details of the purchase.
+    - **Checkout** - Users can check a purchase summary and are invited to enter their delivery and payment details.
+    - **Men** - Men selection
+    - **Women** - Women selection
+    - **Sale** - Selection of products on Sale
 
-**So….?**
+### Database Schema
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### 5. Surface
 
-**Can I opt out?**
+The overall UX is clean and similar on all pages to keep consistency.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Colors:
 
+### Typography :
+
+### Images:
+
+## Features
+
+### Existing Features
+
+
+## Technologies Used
+### 1. Languages
+
+-  [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+-  [CSS](https://en.wikipedia.org/wiki/CSS)
+
+-  [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+-  [Python](<https://en.wikipedia.org/wiki/Python_(programming_language)>)
+
+### 2. Integrations
+-  [Google Fonts](https://fonts.google.com/) - Typography.
+
+-  [Bootstrap](https://getbootstrap.com/) - Used for icons.
+
+-  [jQuery](https://jquery.com/) - JavaScript library.
+
+-  [Django](https://www.djangoproject.com/) - Micro web framework written in Python.
+
+### 3. Workspace, version control, and repository storage
+-  [Gitpod](https://www.gitpod.io/) - IDE (Integrated Development Environment) used to write the code.
+
+-  [GitHub](https://github.com/) - Repository hosting service to host the deployed website and track previous versions of code.
+
+-  [Git](https://git-scm.com/) - Version control tool to record changes and updates to my files.
+
+-  [Heroku](https://www.heroku.com/) - Container-based cloud platform for deployment and running of apps.
+
+-  [AWS S3](https://aws.amazon.com/s3/) - Cloud storage for static and media files.
+
+## Code Validation
+
+-  [W3C](https://validator.w3.org/) - HTML Markup Validation.
+
+-  [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) - Validates all tags are opening and closing correctly.
+
+-  [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation.
+
+-  [JSHINT](https://jshint.com/) - JavaScript code warning & error check.
+
+## Testing
+
+## Deployment
+
+### Project Creation
+- To create this project the used the [CI Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+- I was then directed to the create a new repository from the template page and entered in my desired repository name, then clicked create
+repository.
+- Once created, I navigated to my new repository on GitHub and clicked the Gitpod button which built my workspace.
+
+### Local Installation
+1. Save a copy of the GitHub [repository](https://github.com/Henriqueperoni/MS4-Read-More-For-Less) by clicking the `download.zip` button at the top of the page 
+and extracting the zip file, or you clone the repository with this command:
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/NunoCos/fashion-milestone4.git
+```
+2. Copy the repository into your IDE.
+3. Install all required modules with the command:
+```
+pip3 install -r requirements.txt
+```
+4. Store your environment variables and save them in the `Environment Variables-Settings` in your IDE:
+```
+DEVELOPMENT - Set to True
+SECRET_KEY - From a free Django Secret Key Generator
+STRIPE_PUBLIC_KEY - From Developer's API on the Stripe dashboard
+STRIPE_SECRET_KEY - From Developer's API on the Stripe dashboard
+STRIPE_WH_SECRET - From Stripe's developer API after creating a webhook
+```
+5. Set up the local database running the following commands:
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+6. Create a superuser to access the Django Admin Panel with the command:
+```
+python3 manage.py createsuperuser
+```
+7. Start your server running the following command:
+```
+python3 manage.py runserver
 ```
 
-**Anything more?**
+### Remote Deployment on Heroku
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+#### Create application
+1. Setup and account and log in to Heroku.
+2. Click on the `new` button.
+3. Select create `new app`.
+4. Enter the app name.
+5. Select region.
+ 
+#### Set up connection to Github Repository:
+1. Click the `Deploy tab`.
+2. `Select GitHub - Connect to GitHub`.
+3. A prompt to find a Github repository to connect to will be displayed.
+4. Enter the repository name for the project and `Click Search`.
+5. Once the repo has been found, click the `Connect Button`.
 
----
+#### Set environment variables:
+1. Click on the `Settings tab`.
+2. Click `Reveal Config Vars`.
+3. Variables added:
+```
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+DATABASE_URL
+EMAIL_HOST_PASSWORD
+EMAIL_HOST_USER
+SECRET_KEY
+STRIPE_PUBLIC_KEY
+STRIPE_SECRET_KEY
+STRIPE_WH_SECRET
+USE_AWS
+```
 
-Happy coding!
+#### Enable automatic deployment:
+1. Click the `Deploy tab`.
+2. In the Automatic Deploys section, choose the branch you want to deploy (the master branch in my Read More For Less in my case).
+3. Click `Enable Automation Deploys`.
+
+## Credits
+### Resources
+- [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) Course Content - Main source of fundamental knowledge.
+
+- Code Institute SLACK Community - General Resource.
+
+-  [W3.CSS](https://www.w3schools.com/w3css/defaulT.asp) - General resource.
+
+-  [Stack Overflow](https://pt.stackoverflow.com/) - General resource.
+
+-  [Youtube](https://www.youtube.com/) - General resource.
+
+-  [Coolors](https://coolors.co/) - Find matching color palette for site.
+
+-  [Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
+
+-  [Google Mobile-Friendly](https://search.google.com/test/mobile-friendly) - Test Mobile-friendly check on site.
+
+### Code
+
+## Acknowledgments
+
