@@ -14,12 +14,12 @@ CATEGORY_CHOICES = (
 )
 
 ADMIN_CHOICES = (
-    ("admin","admin"),
+    ("admin", "admin"),
 )
 
 SIZE_CHOICES = (
-    ("S","S"),
-    ("M","M"),
-    ("L","L"),
-    ("XL","XL"),
+    ("S", "S"),
+    ("M", "M"),
+    ("L", "L"),
+    ("XL", "XL"),
 )
